@@ -29,8 +29,7 @@ jobs:
           set +o pipefail
           yes | sdkmanager --licenses
           set -o pipefail
-          sdkmanager "platforms;android-37" "build-tools;37.0.0"
-
+          sdkmanager "platforms;android-37.2" "build-tools;37.0.0"
       - name: Build APK
         run: |
           chmod +x gradlew
